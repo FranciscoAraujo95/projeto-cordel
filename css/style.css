@@ -61,14 +61,14 @@ article {
 
 section#img01 {
   width: 97vw;
-  background-image: url(/img/background001.jpg);
+  background-image: url(../img/background001.jpg);
   background-size: cover;
   background-attachment: fixed;
 }
 
 section#img02 {
   width: 97vw;
-  background-image: url(/img/background002.jpg);
+  background-image: url(../img/background002.jpg);
   background-size: cover;
   background-attachment: fixed;
 }
