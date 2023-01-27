@@ -1,90 +1,103 @@
-@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Passion+One&display=swap");
 
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 
+/* Definição de variáveis globais */
+:root {
+  --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+  --fonte2: "Passion One", cursive;
+  --fonte3: "Sriracha", cursive;
+}
+
+/* Remover valores padrão do navegador */
 * {
   margin: 0px;
   padding: 0px;
 }
 
+html,
+body {
+  min-height: 100vh;
+  background-color: darkgrey;
+  font-family: var(--fonte1);
+}
+
 header {
-  background-color: #000;
+  background-color: #805500;
   color: white;
   text-align: center;
-  height: 270px;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 1em;
 }
 
 header .titulo {
   font-size: 8em;
-  font-family: 'Passion One', cursive;
+  font-family: "Passion One", cursive;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.03em;
 }
 
-header p,
-a {
+header a,
+footer a {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1.1em;
   font-weight: bold;
-  letter-spacing: -0.05em;
   text-decoration: none;
 
   color: white;
 }
 
-header a:hover {
+header a:hover,
+footer a:hover {
   text-decoration: underline;
 }
 
+/* Configs para todas as sessões */
 section {
   padding: 15px;
   line-height: 2;
-  font-family: 'Sriracha', cursive;
+  font-family: "Sriracha", cursive;
   font-size: 3em;
   width: 590px;
   padding: 1em 0 1em 0.5em;
 }
 
-article {
-  width: 600px;
+/* Aplica somente às sessões com imagens */
+section.imagem {
+  background-color: rgb(59, 59, 59);
+  background-attachment: fixed;
   color: white;
-  padding: 10px;
-  border-radius: 10px;
-  background-color: rgba(0, 0, 0, 0.336);
+  box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.397);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
+section.imagem p {
+  background-color: rgba(0, 0, 0, 0.432);
+  display: inline-block;
+  padding: 10px;
+  border-radius: 15px;
+  text-shadow: 1px 1px 0px black;
+}
+
+/* Foi necessário o ".." no endereço pois o arquivo style.css está dentro da pasta css, tivemos que voltar um nível para entrar na pasta img */
 section#img01 {
-  width: 97vw;
   background-image: url(../img/background001.jpg);
-  background-size: cover;
-  background-attachment: fixed;
+  background-position: right center;
 }
 
 section#img02 {
-  width: 97vw;
   background-image: url(../img/background002.jpg);
-  background-size: cover;
-  background-attachment: fixed;
+  background-position: right center;
 }
 
 footer {
   padding: 20px;
   background-color: #000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8em;
+  text-align: center;
 }
 
 footer p {
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
   color: white;
-}
-
-strong {
-  font-style: italic;
-  font-weight: bold;
 }
