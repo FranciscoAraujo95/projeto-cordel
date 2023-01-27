@@ -1,15 +1,19 @@
+/* Compatibilidade com caracteres especiais */
 @charset "UTF-8";
 
+/* Importação das fontes especiais usadas, via Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Passion+One&display=swap");
 
 @import url("https://fonts.googleapis.com/css2?family=Sriracha&display=swap");
 
+/* Definição de variáveis globais */
 :root {
   --fonte1: Verdana, Geneva, Tahoma, sans-serif;
   --fonte2: "Passion One", cursive;
   --fonte3: "Sriracha", cursive;
 }
 
+/* Remover valores padrão do navegador */
 * {
   margin: 0px;
   padding: 0px;
@@ -56,6 +60,7 @@ footer a:hover {
   text-decoration: underline;
 }
 
+/* Configs para todas as sessões */
 section {
   padding-top: 10vh;
   padding-bottom: 10vh;
@@ -70,11 +75,13 @@ section p {
   padding-bottom: 2em;
 }
 
+/* Aplica somente às seções sem imagem */
 section.normal {
   background-color: #fff;
   color: #000;
 }
 
+/* Aplica somente às sessões com imagens */
 section.imagem {
   background-color: rgb(59, 59, 59);
   background-attachment: fixed;
@@ -92,6 +99,7 @@ section.imagem p {
   text-shadow: 1px 1px 0px black;
 }
 
+/* Foi necessário o ".." no endereço pois o arquivo style.css está dentro da pasta css, tivemos que voltar um nível para entrar na pasta img */
 section#img01 {
   background-image: url(../img/background001.jpg);
   background-position: right center;
