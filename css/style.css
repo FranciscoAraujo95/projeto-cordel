@@ -63,7 +63,11 @@ section {
   line-height: 2em;
 
   font-family: var(--fonte3);
-  font-size: 4vw;
+  font-size: 3.5vw;
+}
+
+section p {
+  padding-bottom: 2em;
 }
 
 section.normal {
@@ -81,6 +85,14 @@ section.imagem p {
   display: inline-block;
   padding: 10px;
   border-radius: 15px;
+}
+
+section#img01 {
+  background-image: url(../img/background001.jpg);
+}
+
+section#img02 {
+  background-image: url(../img/background002.jpg);
 }
 
 footer {
