@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Passion+One&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
 
-@import url("https://fonts.googleapis.com/css2?family=Sriracha&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 
 * {
   margin: 0px;
@@ -21,7 +21,7 @@ header {
 
 header .titulo {
   font-size: 8em;
-  font-family: "Passion One", cursive;
+  font-family: 'Passion One', cursive;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.03em;
@@ -45,7 +45,7 @@ header a:hover {
 section {
   padding: 15px;
   line-height: 2;
-  font-family: "Sriracha", cursive;
+  font-family: 'Sriracha', cursive;
   font-size: 3em;
   width: 590px;
   padding: 1em 0 1em 0.5em;
