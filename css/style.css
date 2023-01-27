@@ -9,32 +9,40 @@
   padding: 0px;
 }
 
-body p {
-  color: #5c3d00;
+html,
+body {
+  min-height: 100vh;
+  background-color: darkgrey;
 }
+
+/* body p {
+  color: #5c3d00;
+} */
 
 header {
   background-color: #805500;
   color: white;
   text-align: center;
-  height: 270px;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 1em;
 }
 
 header .titulo {
   font-size: 8em;
   font-family: "Passion One", cursive;
   font-weight: 600;
-  text-transform: uppercase;
+  font-variant: small-caps;
+  padding-top: 50px;
+
   letter-spacing: 0.03em;
 }
 
-header p,
-a {
+header p {
+  padding-bottom: 50px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header a,
+footer a {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1.1em;
   font-weight: bold;
@@ -44,54 +52,41 @@ a {
   color: white;
 }
 
-header a:hover {
+header a:hover,
+footer a:hover {
   text-decoration: underline;
 }
 
 section {
-  padding: 15px;
-  line-height: 2;
-  font-family: "Sriracha", cursive;
-  font-size: 3em;
-  width: 632px;
-  padding: 1em 0 1em 0.5em;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  padding-left: 30px;
+  line-height: 2em;
 }
 
-article {
-  width: 600px;
+section.normal {
+  background-color: #fff;
+  color: #000;
+}
+
+section.imagem {
+  background-color: rgb(59, 59, 59);
   color: white;
-  padding: 10px;
-  border-radius: 10px;
-  background-color: rgba(0, 0, 0, 0.336);
 }
 
-section#img01 {
-  width: 97vw;
-  background-image: url(../img/background001.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-section#img02 {
-  width: 97vw;
-  background-image: url(../img/background002.jpg);
-  background-size: cover;
-  background-attachment: fixed;
+section.imagem p {
+  background-color: rgba(0, 0, 0, 0.37);
+  width: 400px;
 }
 
 footer {
   padding: 20px;
   background-color: #000;
-}
-
-footer p {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 0.8em;
   text-align: center;
-  color: white;
 }
 
-strong {
-  font-style: italic;
-  font-weight: bold;
+footer p {
+  color: white;
 }
