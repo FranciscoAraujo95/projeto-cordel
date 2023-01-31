@@ -4,6 +4,7 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Sriracha&display=swap");
 
+/* Importação de fonte baixada da internet do site dafont.com */
 @font-face {
   font-family: "Rebellion Knight";
   src: url(../fonts/Rebellion\ Knight\ Personal\ Use\ Only.otf)
@@ -45,6 +46,7 @@ header {
 header .titulo {
   font-size: 10vw;
   font-family: var(--fonte4);
+  /* font-variant: small-caps; Esse parâmetro deixa todas as letras em maiúsculas mas só a primeira maior que todas as outras, é útil dependenod da fonte que se use */
   font-weight: lighter;
   text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.356);
   padding-top: 50px;
