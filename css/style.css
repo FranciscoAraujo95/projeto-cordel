@@ -1,14 +1,21 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Passion+One&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Sriracha&display=swap");
+
+@font-face {
+  font-family: "Rebellion Knight";
+  src: url(../fonts/Rebellion\ Knight\ Personal\ Use\ Only.otf)
+    format("opentype");
+}
 
 /* Definição de variáveis globais */
 :root {
   --fonte1: Verdana, Geneva, Tahoma, sans-serif;
-  --fonte2: 'Passion One', cursive;
-  --fonte3: 'Sriracha', cursive;
+  --fonte2: "Passion One", cursive;
+  --fonte3: "Sriracha", cursive;
+  --fonte4: "Rebellion Knight", cursive;
 }
 
 /* Remover valores padrão do navegador */
@@ -30,16 +37,16 @@ body p {
 }
 
 header {
-  background-color: #805500;
+  background-image: linear-gradient(to right bottom, #805500, #9c6a06) ;
   color: white;
   text-align: center;
 }
 
 header .titulo {
   font-size: 10vw;
-  font-family: var(--fonte2);
-  font-weight: bold;
-  font-variant: small-caps;
+  font-family: var(--fonte4);
+  font-weight: lighter;
+  text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.356);
   padding-top: 50px;
 }
 
