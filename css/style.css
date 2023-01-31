@@ -37,7 +37,7 @@ body p {
 }
 
 header {
-  background-image: linear-gradient(to right bottom, #805500, #9c6a06) ;
+  background-image: linear-gradient(to right bottom, #805500, #9c6a06);
   color: white;
   text-align: center;
 }
@@ -107,10 +107,10 @@ section.normal {
 section.imagem {
   background-color: rgb(59, 59, 59);
   background-attachment: fixed;
-  color: white;
-  box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.397);
   background-size: cover;
   background-repeat: no-repeat;
+  color: white;
+  box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.452);
 }
 
 section.imagem p {
