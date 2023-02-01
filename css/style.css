@@ -1,22 +1,22 @@
 @charset "UTF-8";
 
-@import url("https://fonts.googleapis.com/css2?family=Passion+One&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
 
-@import url("https://fonts.googleapis.com/css2?family=Sriracha&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 
 /* Importação de fonte baixada da internet do site dafont.com */
 @font-face {
-  font-family: "Rebellion Knight";
+  font-family: 'Rebellion Knight';
   src: url(../fonts/Rebellion\ Knight\ Personal\ Use\ Only.otf)
-    format("opentype");
+    format('opentype');
 }
 
 /* Definição de variáveis globais */
 :root {
   --fonte1: Verdana, Geneva, Tahoma, sans-serif;
-  --fonte2: "Passion One", cursive;
-  --fonte3: "Sriracha", cursive;
-  --fonte4: "Rebellion Knight", cursive;
+  --fonte2: 'Passion One', cursive;
+  --fonte3: 'Sriracha', cursive;
+  --fonte4: 'Rebellion Knight', cursive;
 }
 
 /* Remover valores padrão do navegador */
